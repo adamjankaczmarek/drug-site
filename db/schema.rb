@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121230124925) do
+ActiveRecord::Schema.define(:version => 20130108173440) do
 
   create_table "contacts", :force => true do |t|
     t.string   "name",       :null => false
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(:version => 20121230124925) do
     t.string   "github_nickname"
     t.string   "rss_url"
     t.text     "description"
+    t.string   "twitter_uid"
   end
 
   create_table "people_presentations", :force => true do |t|

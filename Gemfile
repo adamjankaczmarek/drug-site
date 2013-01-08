@@ -12,6 +12,7 @@ gem 'sqlite3'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-github'
+gem 'omniauth-twitter'
 gem 'localeapp'
 gem 'bbq', :github => 'drugpl/bbq'
 
