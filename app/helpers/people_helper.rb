@@ -20,7 +20,7 @@ module PeopleHelper
   end
 
   def profiles_auth_links(person)
-    blank_providers = ['github', 'facebook'].select do |provider|
+    blank_providers = ['github', 'facebook', 'twitter'].select do |provider|
       person.send("#{provider}_uid").blank?
     end.map do |provider|
       link_to provider, "/auth/#{provider}"
