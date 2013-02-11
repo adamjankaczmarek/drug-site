@@ -8,6 +8,10 @@ class ApplicationController < ActionController::Base
   #   end
   # end
 
+  rescue_from CanCan::AccessDenied do |exception|
+    redirect_to root_url, :alert => exception.message
+  end
+
   private
   def current_user
     @current_user ||= Person.find(session[:user_id]) if session[:user_id]

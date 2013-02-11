@@ -9,7 +9,7 @@ en:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    - !!null 
     - Jan
     - Feb
     - Mar
@@ -35,7 +35,7 @@ en:
       long: ! '%B %d, %Y'
       short: ! '%b %d'
     month_names:
-    - 
+    - !!null 
     - January
     - February
     - March
@@ -95,9 +95,9 @@ en:
       month: Month
       second: Seconds
       year: Year
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
-    messages:
+    messages: &14640780
       accepted: must be accepted
       blank: can't be blank
       confirmation: doesn't match confirmation
@@ -125,7 +125,7 @@ en:
       wrong_length:
         one: is the wrong length (should be 1 character)
         other: is the wrong length (should be %{count} characters)
-    template:
+    template: &14628980
       body: ! 'There were problems with the following fields:'
       header:
         one: 1 error prohibited this %{model} from being saved
@@ -197,15 +197,23 @@ en:
       short: ! '%d %b %H:%M'
       event: ! '%A, %d %B %Y at %H:%M'
     pm: pm
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
     errors:
-      <<: *errors
+      format: ! '%{attribute} %{message}'
+      messages: *14640780
+      template: *14628980
   activerecord:
     errors:
-      <<: *errors
-
+      format: ! '%{attribute} %{message}'
+      messages: *14640780
+      template: *14628980
   events:
     no_upcoming_event: No upcoming event. That's extremely unlikely!
     keep_updated: Keep an eye for updates on %{source} and come back later.
-
+  i18n:
+    transliterate:
+      rule: {}
+  unauthorized:
+    default: You are not authorized to access this page.
+    create:
+      presentation: Your karma is too low to speak on DRUG

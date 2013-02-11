@@ -1,137 +1,130 @@
-# Polish translations for Ruby on Rails
-# by Jacek Becela (jacek.becela@gmail.com, http://github.com/ncr)
-
 pl:
   number:
     format:
-      separator: ","
-      delimiter: " "
+      separator: ! ','
+      delimiter: ! ' '
       precision: 2
     currency:
       format:
-        format: "%n %u"
-        unit: "PLN"
-        separator: ","
-        delimiter: " "
+        format: ! '%n %u'
+        unit: PLN
+        separator: ! ','
+        delimiter: ! ' '
         precision: 2
     percentage:
       format:
-        delimiter: ""
+        delimiter: ''
     precision:
       format:
-        delimiter: ""
+        delimiter: ''
     human:
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 1
       storage_units:
-        format: "%n %u"
+        format: ! '%n %u'
         units:
           byte:
-            one:   "bajt"
-            other: "bajty"
-          kb: "KB"
-          mb: "MB"
-          gb: "GB"
-          tb: "TB"
-
+            one: bajt
+            other: bajty
+          kb: KB
+          mb: MB
+          gb: GB
+          tb: TB
   time:
     formats:
-      default: "%d/%m/%Y, %H:%M"
-      short: "%d %b, %H:%M"
-      long: "%d %B %Y, %H:%M"
-      event: "%A, %d %B %Y, %H:%M"
-    am: "przed południem"
-    pm: "po południu"
-
+      default: ! '%d/%m/%Y, %H:%M'
+      short: ! '%d %b, %H:%M'
+      long: ! '%d %B %Y, %H:%M'
+      event: ! '%A, %d %B %Y, %H:%M'
+    am: przed południem
+    pm: po południu
   datetime:
     distance_in_words:
-      half_a_minute: "pół minuty"
+      half_a_minute: pół minuty
       less_than_x_seconds:
-        one:   "mniej niż sekundę"
-        few:   "mniej niż %{count} sekundy"
-        other: "mniej niż %{count} sekund"
+        one: mniej niż sekundę
+        few: mniej niż %{count} sekundy
+        other: mniej niż %{count} sekund
       x_seconds:
-        one:   "sekundę"
-        few:   "%{count} sekundy"
-        other: "%{count} sekund"
+        one: sekundę
+        few: ! '%{count} sekundy'
+        other: ! '%{count} sekund'
       less_than_x_minutes:
-        one:   "mniej niż minutę"
-        few:   "mniej niż %{count} minuty"
-        other: "mniej niż %{count} minut"
+        one: mniej niż minutę
+        few: mniej niż %{count} minuty
+        other: mniej niż %{count} minut
       x_minutes:
-        one:   "minutę"
-        few:   "%{count} minuty"
-        other: "%{count} minut"
+        one: minutę
+        few: ! '%{count} minuty'
+        other: ! '%{count} minut'
       about_x_hours:
-        one:   "około godziny"
-        other: "około %{count} godzin"
+        one: około godziny
+        other: około %{count} godzin
       x_days:
-        one:   "1 dzień"
-        other: "%{count} dni"
+        one: 1 dzień
+        other: ! '%{count} dni'
       about_x_months:
-        one:   "około miesiąca"
-        other: "około %{count} miesięcy"
+        one: około miesiąca
+        other: około %{count} miesięcy
       x_months:
-        one:   "1 miesiąc"
-        few:   "%{count} miesiące"
-        other: "%{count} miesięcy"
+        one: 1 miesiąc
+        few: ! '%{count} miesiące'
+        other: ! '%{count} miesięcy'
       about_x_years:
-        one:   "około roku"
-        other: "około %{count} lat"
+        one: około roku
+        other: około %{count} lat
       almost_x_years:
-        one:   "prawie rok"
-        few:   "prawie %{count} lata"
-        other: "prawie %{count} lat"
+        one: prawie rok
+        few: prawie %{count} lata
+        other: prawie %{count} lat
       over_x_years:
-        one:   "ponad rok"
-        few:   "ponad %{count} lata"
-        other: "ponad %{count} lat"
+        one: ponad rok
+        few: ponad %{count} lata
+        other: ponad %{count} lat
     prompts:
-      second: "sekundy"
-      minute: "minuty"
-      hour:   "godziny"
-      day:    "dzień"
-      month:  "miesiąc"
-      year:   "rok"
-
+      second: sekundy
+      minute: minuty
+      hour: godziny
+      day: dzień
+      month: miesiąc
+      year: rok
   activemodel:
     errors:
       template:
         header:
-          one:    "%{model} nie został zachowany z powodu jednego błędu"
-          other:  "%{model} nie został zachowany z powodu %{count} błędów"
-        body: "Błędy dotyczą następujących pól:"
-
+          one: ! '%{model} nie został zachowany z powodu jednego błędu'
+          other: ! '%{model} nie został zachowany z powodu %{count} błędów'
+        body: ! 'Błędy dotyczą następujących pól:'
   activerecord:
     errors:
       template:
         header:
-          one:    "%{model} nie został zachowany z powodu jednego błędu"
-          other:  "%{model} nie został zachowany z powodu %{count} błędów"
-        body: "Błędy dotyczą następujących pól:"
+          one: ! '%{model} nie został zachowany z powodu jednego błędu'
+          other: ! '%{model} nie został zachowany z powodu %{count} błędów'
+        body: ! 'Błędy dotyczą następujących pól:'
       messages:
-        inclusion: "nie znajduje się na liście dopuszczalnych wartości"
-        exclusion: "znajduje się na liście zabronionych wartości"
-        invalid: "jest nieprawidłowe"
-        confirmation: "nie zgadza się z potwierdzeniem"
-        accepted: "musi być zaakceptowane"
-        empty: "nie może być puste"
-        blank: "nie może być puste"
-        too_long: "jest za długie (maksymalnie %{count} znaków)"
-        too_short: "jest za krótkie (minimalnie %{count} znaków)"
-        wrong_length: "jest nieprawidłowej długości (powinna wynosić %{count} znaków)"
-        taken: "zostało już zajęte"
-        not_a_number: "nie jest liczbą"
-        not_an_integer: "nie jest liczbą całkowitą"
-        greater_than: "musi być większe niż %{count}"
-        greater_than_or_equal_to: "musi być większe lub równe %{count}"
-        equal_to: "musi być równe %{count}"
-        less_than: "musi być mniejsze niż %{count}"
-        less_than_or_equal_to: "musi być mniejsze lub równe %{count}"
-        odd: "musi być nieparzyste"
-        even: "musi być parzyste"
-        record_invalid: "Negatywne sprawdzenie poprawności: %{errors}"
+        inclusion: nie znajduje się na liście dopuszczalnych wartości
+        exclusion: znajduje się na liście zabronionych wartości
+        invalid: jest nieprawidłowe
+        confirmation: nie zgadza się z potwierdzeniem
+        accepted: musi być zaakceptowane
+        empty: nie może być puste
+        blank: nie może być puste
+        too_long: jest za długie (maksymalnie %{count} znaków)
+        too_short: jest za krótkie (minimalnie %{count} znaków)
+        wrong_length: jest nieprawidłowej długości (powinna wynosić %{count} znaków)
+        taken: zostało już zajęte
+        not_a_number: nie jest liczbą
+        not_an_integer: nie jest liczbą całkowitą
+        greater_than: musi być większe niż %{count}
+        greater_than_or_equal_to: musi być większe lub równe %{count}
+        equal_to: musi być równe %{count}
+        less_than: musi być mniejsze niż %{count}
+        less_than_or_equal_to: musi być mniejsze lub równe %{count}
+        odd: musi być nieparzyste
+        even: musi być parzyste
+        record_invalid: ! 'Negatywne sprawdzenie poprawności: %{errors}'
     attributes:
       contact:
         name: Imię
@@ -139,18 +132,16 @@ pl:
         email: Email
   support:
     array:
-      sentence_connector: "i"
+      sentence_connector: i
       skip_last_comma: true
-      words_connector: ", "
-      two_words_connector: " i "
-      last_word_connector: " i "
+      words_connector: ! ', '
+      two_words_connector: ! ' i '
+      last_word_connector: ! ' i '
     select:
-      prompt: "Proszę wybrać:"
-
+      prompt: ! 'Proszę wybrać:'
   events:
     no_upcoming_event: Brak nadchodzących wydarzeń. Niespotykane!
     keep_updated: Śledź wiadomości na {{source}} i zajrzyj tu później.
-
     no_events_published: Brak wydarzeń
     last_event: Ostatnie spotkanie
     next_event: Najbliższe spotkanie
@@ -163,43 +154,39 @@ pl:
       description: Kanał spotkań ze strony drug.org.pl
     attend: Dołącz
     decline: Zrezygnuj
-
   site_menu:
     pages:
       home: Strona główna
       events: Spotkania
       news_articles: Aktualności
       contact: Kontakt
-
   snippets:
     online: DRUG w sieci
     community: Ruby w Polsce
     about: O nas
     keep_in_touch: Na bieżąco
     events: Wydarzenia
-
   news_articles:
     latest: Ostatnie aktualności
-    read_more: 'czytaj więcej'
+    read_more: czytaj więcej
     news_article_details: Szczegóły aktualności
     rss:
       title: Dolnośląska Grupa Użytkowników Ruby - Aktualności
       description: Kanał aktualności ze strony drug.org.pl
-
   contacts:
     spam_protection: Jesteś człowiekiem?
     message_sent_successfuly: Wiadomość wysłana pomyślnie
     message_not_sent_due_to_errors: Wiadomość nie została wysłana z powodu błędów
-
   contact_mailer:
     contact_message:
-      subject: "Nowa wiadomość ze strony drug.org.pl"
-
+      subject: Nowa wiadomość ze strony drug.org.pl
   send: Wyślij
-
   views:
     pagination:
-      next: "Dalej &rarr;"
-      previous: "&larr; Wstecz"
-      truncate: "..."
-
+      next: Dalej &rarr;
+      previous: ! '&larr; Wstecz'
+      truncate: ! '...'
+  unauthorized:
+    default: !!null 
+    create:
+      presentation: Twoja karma jest zbyt mała, abyś mógł/mogła wygłosić prezentację

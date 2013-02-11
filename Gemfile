@@ -15,6 +15,7 @@ gem 'omniauth-github'
 gem 'omniauth-twitter'
 gem 'localeapp'
 gem 'bbq', :github => 'drugpl/bbq'
+gem 'cancan'
 
 group :assets do
   gem 'sass-rails', '~> 3.2.3'

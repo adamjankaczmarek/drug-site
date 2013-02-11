@@ -1,6 +1,7 @@
 class PresentationsController < ApplicationController
   respond_to :html, :json
-
+  authorize_resource :only => :create
+  
   def create
     event = Event.find(params[:event_id])
     @presentation = event.presentations.create(params[:presentation])
